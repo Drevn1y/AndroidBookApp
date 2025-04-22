@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "968394023132",
+    "project_id": "book-app-eca90",
+    "storage_bucket": "book-app-eca90.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968394023132:android:1e125f77125a1bedbe5419",
+        "android_client_info": {
+          "package_name": "com.msi.sardorbek_asilov"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAznxSC0MQXE5eXihownR_0DVcOpWLF1u0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

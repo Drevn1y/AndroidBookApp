@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".DashboardUserActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="@string/dashboard_user"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/subTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titleTv"
+            android:layout_height="wrap_content"
+            android:text="@string/test_mail"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/LogoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_logout_white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/favoritesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClickFavorites"
+            android:src="@drawable/ic_favorite_white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="659dp"
+        android:layout_below="@id/toolbarRl"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:id="@+id/books"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/bookImage1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook1"
+                    android:src="@drawable/book1" />
+
+                <ImageView
+                    android:id="@+id/bookImage2"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook2"
+                    android:src="@drawable/book2" />
+
+                <ImageView
+                    android:id="@+id/bookImage3"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook3"
+                    android:src="@drawable/book3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/bookImage4"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook4"
+                    android:src="@drawable/book4" />
+
+                <ImageView
+                    android:id="@+id/bookImage5"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook5"
+                    android:src="@drawable/book5" />
+
+                <ImageView
+                    android:id="@+id/bookImage6"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook6"
+                    android:src="@drawable/book6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/bookImage7"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook7"
+                    android:src="@drawable/book7" />
+
+                <ImageView
+                    android:id="@+id/bookImage8"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook8"
+                    android:src="@drawable/book8" />
+
+                <ImageView
+                    android:id="@+id/bookImage9"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook9"
+                    android:src="@drawable/book9" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/bookImage10"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook10"
+                    android:src="@drawable/book10" />
+
+                <ImageView
+                    android:id="@+id/bookImage11"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook11"
+                    android:src="@drawable/book11" />
+
+                <ImageView
+                    android:id="@+id/bookImage12"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook12"
+                    android:src="@drawable/book12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/bookImage13"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook13"
+                    android:src="@drawable/book13" />
+
+                <ImageView
+                    android:id="@+id/bookImage14"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook14"
+                    android:src="@drawable/book14" />
+
+                <ImageView
+                    android:id="@+id/bookImage15"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBook15"
+                    android:src="@drawable/book15" />
+            </LinearLayout>
+
+        </LinearLayout> <!-- Закрывающий тег для books -->
+
+    </ScrollView>
+</RelativeLayout>
